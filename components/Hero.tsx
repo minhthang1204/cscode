@@ -6,7 +6,7 @@ const Hero = () => {
       id="home"
       className="relative overflow-hidden bg-[rgba(0,0,0,0.7)] pt-[120px] md:pt-[150px] lg:pt-[190px]"
     >
-      <img src="/assets/images/mission/picture2.jpeg" className='absolute -z-10 top-0 left-0 w-full h-full' alt="" />
+      <img src="/assets/images/hero/cs2bg.avif" className='absolute -z-10 top-0 left-0 w-full h-full' alt="" />
       <div className="container">
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4">
@@ -17,12 +17,12 @@ const Hero = () => {
               <h1
                 className="mb-8 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug md:text-[45px] md:leading-snug"
               >
-                Welcome to the Birdway Synergy Official Website
+                Welcome to the Bla Bla
               </h1>
               <p
                 className="mx-auto mb-10 max-w-[600px] text-base text-[#e4e4e4] sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed"
               >
-                A platform that envisions to make Africa the food basket of the world.
+               By TuanAnh Lever
               </p>
               <ul className="mb-10 flex flex-wrap items-center justify-center">
                 <li>
@@ -34,14 +34,6 @@ const Hero = () => {
                   </a>
                 </li>
               </ul>
-              <div className="wow fadeInUp text-center" data-wow-delay=".3s">
-                <img
-                  src="/assets/images/birdWayLogo.png"
-                  
-                  alt="image"
-                  className="mx-auto rounded-full w-full max-w-[50px] transition duration-300 ease-in-out hover:opacity-100"
-                />
-              </div>
             </div>
           </div>
 
@@ -52,7 +44,7 @@ const Hero = () => {
             >
               <div className="mt-16">
                 <img
-                  src="assets/images/mission/picture2.jpeg"
+                  src="assets/images/hero/skin.webp"
                   alt="hero"
                   className="mx-auto max-w-full rounded-t-xl rounded-tr-xl"
                 />

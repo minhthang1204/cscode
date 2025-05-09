@@ -29,20 +29,20 @@ const Home: NextPage = () => {
     <React.Fragment>
       <Nav />
       <Hero />
-      <Services/>
-      <Vision/>
-      <Values/>
-      <Technology/>
-      <Mission />
-      <Commodities/>
+      {/* <Services/> */}
+      {/* <Vision/> */}
+      {/* <Values/> */}
+      {/* <Technology/> */}
+      {/* <Mission /> */}
+      {/* <Commodities/> */}
       <Features />
-      <Research/>
-      <Warehousing/>
-      <Impact/>
+      {/* <Research/>
+      <Warehousing/> */}
+      {/* <Impact/> */}
       <About />  
       {/* <Team />     */}
       <Faq />
-      <Form />
+      {/* <Form /> */}
     </React.Fragment>
   );
 }
