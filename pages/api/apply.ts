@@ -2,20 +2,18 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import dbConnection from "../../database";
 import memberModel from "../../models/member.model";
 
-dbConnection();
-const member = memberModel;
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+  // await dbConnection();
 
-export default async function(req: NextApiRequest, res: NextApiResponse) {
-  switch (req.method) {
-    case "POST":
-      try {
-        const body = req.body;
-        const createdMember = await member.create(body);
-        res.status(201).json({message: 'Application Successful', data: createdMember})
-      } catch (error) {
-        console.log(error);
-      }
-    default:
-      return res.status(405).json({ message: "Method not available" });
+  if (req.method === "GET") {
+    try {
+      const members = await memberModel.find(); // Lấy tất cả member
+      return res.status(200).json({ message: "Fetched members successfully", data: members });
+    } catch (error) {
+      console.error(error);
+      return res.status(500).json({ message: "Internal Server Error" });
+    }
+  } else {
+    return res.status(405).json({ message: "Method not allowed" });
   }
 }
